@@ -156,7 +156,7 @@ function finish () {
     console.log(this.user)
     const result_info =  `
     <div>
-        <img class="flag" src="../styles/trophy.png"><br>
+        <img class="flag" src="./styles/trophy.png"><br>
         <span class="result"> Result </span>
         <h3> You got <span class="puntos"> ${ user.getResult() }</span> correct answers </h3>
         <button type="button" class="enabled" onclick="refresh()" >Try again </button>
