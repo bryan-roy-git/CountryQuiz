@@ -70,7 +70,7 @@ function getRamdomCountry () {
 }
 
 async function nextQuestion () {
-    if (user.count_question == 5){
+    if (user.count_question == 1){
         finish()
     }else{
         // Generar un index aleatoreo para ubicar la respues correcta
@@ -156,7 +156,7 @@ function finish () {
     console.log(this.user)
     const result_info =  `
     <div>
-        <img class="flag" src="./countryQuiz/styles/trophy.png"><br>
+        <img class="flag" src="./styles/trophy.png"><br>
         <span class="result"> Result </span>
         <h3> You got <span class="puntos"> ${ user.getResult() }</span> correct answers </h3>
         <button type="button" class="enabled" onclick="refresh()" >Try again </button>
