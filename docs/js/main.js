@@ -70,7 +70,7 @@ function getRamdomCountry () {
 }
 
 async function nextQuestion () {
-    if (user.count_question == 1){
+    if (user.count_question == 10){
         finish()
     }else{
         // Generar un index aleatoreo para ubicar la respues correcta
